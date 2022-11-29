@@ -30,6 +30,8 @@ For example we will make application as <ins>perpustakaan</ins>
 django-admin startapp perpustakaan
 ```
 
+#### Setting
+
 #### Routing
 
 #### View
