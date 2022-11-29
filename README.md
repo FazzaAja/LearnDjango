@@ -4,13 +4,13 @@ Tools = [ 'Visual Studio Code', 'Command Prompt', 'Chrome', 'Python' ]
 
 ## STEP :
 
-### Install [Django](https://www.djangoproject.com/download/) version 3.2.16 LTS
+### <li>Install [Django](https://www.djangoproject.com/download/) version 3.2.16 LTS</li>
  
 ```bash
 pip install Django==3.2.16
 ```
 
-### Create project
+### <li>Create project</li>
 For example we will make project as <ins>perpus</ins>
 
 ```bash
@@ -23,7 +23,7 @@ Change directory to project perpus
 cd perpus
 ```
 
-### Create application
+### <li>Create application</li>
 For example we will make application as <ins>perpustakaan</ins>
 
 ```bash
