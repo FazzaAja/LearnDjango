@@ -13,13 +13,13 @@ pip install Django==3.2.16
 #### 2. Create project. For example we will make project as <ins>perpus</ins>
 
 ```bash
-admin-django startproject perpus
+django-admin startproject perpus
 ```
 
 #### 3. Create application. For example we will make application as <ins>perpustakaan</ins>
 
 ```bash
-admin-django startapp perpustakaan
+django-admin startapp perpustakaan
 ```
 
 #### 4. Routing
