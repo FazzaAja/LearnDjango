@@ -10,10 +10,30 @@ Tools = [ 'Visual Studio Code', 'Command Prompt', 'Chrome', 'Python' ]
 pip install Django==3.2.16
 ```
 
-#### 2. Create project. For example we will make perpus as project
+#### 2. Create project. For example we will make project as <ins>perpus</ins>
 
 ```bash
 admin-django startproject perpus
 ```
 
-#### 3. 
+#### 3. Create application. For example we will make application as <ins>perpustakaan</ins>
+
+```bash
+admin-django startapp perpustakaan
+```
+
+#### 4. Routing
+
+#### 5. View
+
+#### 6. Tamplate
+
+#### 7. Static
+
+#### 8. Setup Database
+
+#### 9. Model
+
+
+
+
