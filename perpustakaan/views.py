@@ -22,10 +22,25 @@ def penerbit(request):
 
 
 def tambah_buku(request):
-    form = FormBuku()
+    if request.POST:
+        form = FormBuku(request.POST)
+        if form.is_valid():
+            form.save()
+            form = FormBuku()
+            pesan = 'Data berhasil disimpan'
 
-    konteks = {
-        'form': form
-    }
+            konteks = {
+                'form': form,
+                'pesan': pesan
+            }
 
-    return render(request, 'tambah-buku.html', konteks)
+            return render(request, 'tambah-buku.html', konteks)
+
+    else:
+        form = FormBuku()
+
+        konteks = {
+            'form': form
+        }
+
+        return render(request, 'tambah-buku.html', konteks)
