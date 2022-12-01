@@ -4,35 +4,45 @@ Tools = [ 'Visual Studio Code', 'Command Prompt', 'Chrome', 'Python' ]
 
 ## STEP :
 
-#### 1. Install [Django](https://www.djangoproject.com/download/) version 3.2.16 LTS
+### <li>Install [Django](https://www.djangoproject.com/download/) version 3.2.16 LTS</li>
  
 ```bash
 pip install Django==3.2.16
 ```
 
-#### 2. Create project. For example we will make project as <ins>perpus</ins>
+### <li>Create project</li>
+For example we will make project as <ins>perpus</ins>
 
 ```bash
 django-admin startproject perpus
 ```
 
-#### 3. Create application. For example we will make application as <ins>perpustakaan</ins>
+Change directory to project perpus
+
+```bash
+cd perpus
+```
+
+### <li>Create application</li>
+For example we will make application as <ins>perpustakaan</ins>
 
 ```bash
 django-admin startapp perpustakaan
 ```
 
-#### 4. Routing
+#### Setting
 
-#### 5. View
+#### Routing
 
-#### 6. Tamplate
+#### View
 
-#### 7. Static
+#### Tamplate
 
-#### 8. Setup Database
+#### Static
 
-#### 9. Model
+#### Setup Database
+
+#### Model
 
 
 
