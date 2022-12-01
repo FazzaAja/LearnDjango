@@ -1,9 +1,34 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from perpustakaan.models import Buku
 from perpustakaan.forms import FormBuku
-# from django.http import HttpResponse
-
+from django.contrib import messages
 # Create your views here.
+
+
+def hapus_buku(request, id_buku):
+    buku = Buku.objects.get(id=id_buku)
+    buku.delete()
+
+    messages.success(request, "Data berhasil di hapus")
+    return redirect('buku')
+
+
+def ubah_buku(request, id_buku):
+    buku = Buku.objects.get(id=id_buku)
+    template = 'ubah-buku.html'
+    if request.POST:
+        form = FormBuku(request.POST, instance=buku)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Data berhasil diperbaharui")
+            return redirect('ubah_buku', id_buku=id_buku)
+    else:
+        form = FormBuku(instance=buku)
+        konteks = {
+            'form': form,
+            'buku': buku,
+        }
+    return render(request, template, konteks)
 
 
 def buku(request):
