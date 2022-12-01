@@ -7,9 +7,8 @@ class Kelompok(models.Model):
     nama = models.CharField(max_length=9)
     keterangan = models.TextField()
 
-
-def __str__(self):
-    return self.nama
+    def __str__(self):
+        return self.nama
 
 
 class Buku(models.Model):
@@ -20,6 +19,5 @@ class Buku(models.Model):
     kelompok_id = models.ForeignKey(
         Kelompok, on_delete=models.CASCADE, null=True)
 
-
-def __str__(self):
-    return self.judul
+    def __str__(self):
+        return self.judul

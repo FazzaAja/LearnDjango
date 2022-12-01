@@ -1,18 +1,20 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from perpustakaan.models import Buku
+# from django.http import HttpResponse
 
 # Create your views here.
 
+
 def buku(request):
-    judul = ["Belajar Django", "Belajar PBO", "Belajar Python"]
-    penulis = "Zul Hilmi"
+    books = Buku.objects.all()
+
     konteks = {
-        'title' : judul,
-        'penulis' : penulis,
+        'books': books,
     }
 
     # return HttpResponse('Halaman Buku')
     return render(request, 'buku.html', konteks)
+
 
 def penerbit(request):
     return render(request, 'penerbit.html')
