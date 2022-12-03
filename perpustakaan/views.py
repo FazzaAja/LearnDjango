@@ -4,7 +4,26 @@ from perpustakaan.forms import FormBuku
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.conf import settings
+from django.contrib.auth.forms import UserCreationForm
 # Create your views here.
+
+
+def daftar(request):
+    if request.POST:
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'User berhasil di buat')
+            return redirect('daftar')
+        else:
+            messages.error(request, 'Terjadi kesalahan')
+            return redirect('daftar')
+    else:
+        form = UserCreationForm()
+        konteks = {
+            'form': form,
+        }
+    return render(request, 'daftar.html', konteks)
 
 
 @login_required(login_url=settings.LOGIN_URL)
