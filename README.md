@@ -1,49 +1,46 @@
-# Learn PBO with Django
+# Aplikasi Perpustakaan
 
-Tools = [ 'Visual Studio Code', 'Command Prompt', 'Chrome', 'Python' ]
+Progress belajar materi MVC matapelajaran PBO. Projek ini dipecah menjadi beberapa bagian yang dibuat kedalam bentuk series video, guna mempermudah proses pembelajaran langkah-demi-langkah.
 
-## STEP :
+## Installation
 
-### <li>Install [Django](https://www.djangoproject.com/download/) version 3.2.16 LTS</li>
+### Prerequisite
+
+#### <li>Python 3.7.15 or later</li>
+
+#### <li>Django 2.2.12 or later (2.x.x)</li>
+
+### Run this projec
+
+#### <li>Clone/download the [Repo](https://github.com/writerlab/perpus#aplikasi-perpustakaan)</li>
  
 ```bash
-pip install Django==3.2.16
+git clone https://github.com/writerlab/perpus
 ```
 
-### <li>Create project</li>
-For example we will make project as <ins>perpus</ins>
-
-```bash
-django-admin startproject perpus
-```
-
-Change directory to project perpus
-
+#### <li>Go to project</li>
+ 
 ```bash
 cd perpus
 ```
 
-### <li>Create application</li>
-For example we will make application as <ins>perpustakaan</ins>
-
+#### <li>Install requirements</li>
+ 
 ```bash
-django-admin startapp perpustakaan
+pip install -r packages.txt
 ```
 
-#### Setting
+#### <li>Migrate</li>
+ 
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
 
-#### Routing
+#### <li>Run project</li>
+ 
+```bash
+python manage.py runserver
+```
 
-#### View
-
-#### Tamplate
-
-#### Static
-
-#### Setup Database
-
-#### Model
-
-
-
-
+# Happy Learn Coding ***
