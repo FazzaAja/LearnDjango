@@ -2,8 +2,8 @@
 
 Project ini di buat untuk pembelajaran PBO menggunakan Django.
 
-<li>Source : YouTube [Zul Hilmi](https://www.youtube.com/@HilmiZul)</li>
-<li>Play list : [Belajar Django 2.2i](https://www.youtube.com/playlist?list=PLSCLBARdXrOz4SM3GKyKuqQp7eXWAH1u1)</li>
+### <li>Source : YouTube [Zul Hilmi](https://www.youtube.com/@HilmiZul)</li>
+### <li>Play list : [Belajar Django 2.2i](https://www.youtube.com/playlist?list=PLSCLBARdXrOz4SM3GKyKuqQp7eXWAH1u1)</li>
 
 # Aplikasi Perpustakaan
 
